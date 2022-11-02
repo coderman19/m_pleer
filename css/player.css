@@ -1,0 +1,113 @@
+.player {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  max-width: 1228px;
+  margin: 0 auto;
+  transition: bottom .6s ease;
+  padding: 24px;
+}
+
+.player-active {
+  bottom: 26px;
+}
+
+.player__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* player controllers */
+
+.player__controller {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.player__icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: aquamarine;
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.player__icon_stop {
+  background-image: url('../img/icons/stop.svg');
+}
+
+.player__icon_prev {
+  background-image: url('../img/icons/back.svg');
+}
+
+.player__icon_pause {
+  background-image: url('../img/icons/play.svg');
+}
+
+.player__icon_play {
+  background-image: url('../img/icons/play.svg');
+}
+
+.player__icon_next {
+  background-image: url('../img/icons/forward.svg');
+}
+
+.player__icon_like {
+  background-image: url('../img/icons/heart.svg');
+}
+
+.player__icon_mute {
+  background-image: url('../img/icons/sound.svg');
+}
+
+.player__icon_mute-off {
+  background-image: url('../img/icons/sound_off.svg');
+}
+
+.player__time {
+  font-size: 14px;
+  display: flex;
+  gap: 4px;
+}
+
+.player__volume {
+  background: url(../img/icons/volume.svg) center/contain no-repeat;
+  width: 146px;
+  height: 24px;
+}
+
+.player__volume-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.player__volume-input {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.player__volume-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 24px;
+  background: rgb(25, 41, 131);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  /* border-radius: 30px; */
+}
+
+
