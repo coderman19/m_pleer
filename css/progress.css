@@ -25,7 +25,7 @@
 }
 
 .player__progress-input::-webkit-slider-thumb {
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   width: 20px;
   height: 24px;
   background: rgb(25, 41, 131);
